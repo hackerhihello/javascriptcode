@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Blog</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>JavaScript Fundamentals Blog</h1>
+    </header>
+    <main class="container mt-4">
+
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Introduction to Procedural Programming</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Code is executed in a sequence; functions are called in order.
+                </p>
+                <pre id="code1"><code>function greet(name) {
+    return "Hello, " + name;
+}
+console.log(greet("Alice")); // Outputs: Hello, Alice</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Front-End HTML, CSS, and JavaScript</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: HTML structures content, CSS styles it, and JavaScript adds interactivity.
+                </p>
+                <pre id="code2"><code>&lt;button id="clickMe"&gt;Click me!&lt;/button&gt;
+&lt;script&gt;
+  document.getElementById('clickMe').addEventListener('click', () => {
+    alert('Button clicked!');
+  });
+&lt;/script&gt;</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Best Approaches to Learn JS Editors and CodePen</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use editors like VSCode or CodePen for live coding and testing.
+                </p>
+                <pre
+                    id="code3"><code>// Example: CodePen lets you write HTML, CSS, and JavaScript and see the results immediately.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>WebKit’s Web Inspector</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Tool for debugging and inspecting web pages in Safari.
+                </p>
+                <pre
+                    id="code4"><code>// Open Web Inspector (Cmd+Option+I) to view and debug HTML, CSS, and JavaScript.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Tracking Down Errors</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use the Console for error messages and debugging.
+                </p>
+                <pre id="code5"><code>console.error('This is an error message');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JS Versions (ECMAScript 5 and 6)</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: ES5 and ES6 are versions of JavaScript with different features.
+                </p>
+                <pre id="code6"><code>// ES5
+var name = "John";
+
+// ES6
+let name = "John";</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Browser Support for ES6</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Check compatibility using resources like Can I use.
+                </p>
+                <pre
+                    id="code7"><code>// Features like let, const, and arrow functions are widely supported.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JavaScript Output Methods</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code8')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use console.log(), alert(), and document.write().
+                </p>
+                <pre id="code8"><code>console.log('Hello, Console');
+alert('Hello, Alert');
+document.write('Hello, Document Write');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JavaScript Variables</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code9')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Variables store data using var, let, and const.
+                </p>
+                <pre id="code9"><code>let name = "Alice";
+const age = 30;</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Comments</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code10')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use // for single-line and /* ... */ for multi-line comments.
+                </p>
+                <pre id="code10"><code>// Single line comment
+/* Multi-line comment */</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Console</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code11')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use the Console for logging and debugging.
+                </p>
+                <pre id="code11"><code>console.log('Debugging information');</code></pre>
+            </div>
+        </div>
+
+
+        <!-- Card 12 (continued) -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <pre id="code12"><code>let name = "John"; // string
+let age = 25;      // number
+let isStudent = true; // Boolean</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Date Objects</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code13')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Work with dates and times using Date().
+                </p>
+                <pre id="code13"><code>let today = new Date();
+console.log(today.toDateString());</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Operators</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code14')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Includes arithmetic (+, -, *, /), comparison (==, ===), logical (&&, ||).
+                </p>
+                <pre id="code14"><code>let sum = 10 + 5; // Arithmetic
+let isEqual = (5 == 5); // Comparison
+let result = (true && false); // Logical</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Conditions and Loops (Control Structures)</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code15')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use if, else, for, while for control flow.
+                </p>
+                <pre id="code15"><code>if (age > 18) {
+  console.log("Adult");
+}
+
+for (let i = 0; i < 3; i++) {
+  console.log(i);
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Arrays and Array Methods</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code16')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Arrays store lists; methods include push(), pop(), map().
+                </p>
+                <pre id="code16"><code>let numbers = [1, 2, 3];
+numbers.push(4);
+console.log(numbers.map(num => num * 2));</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>String and String Methods</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code17')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Strings are text; methods include length, toUpperCase(), substring().
+                </p>
+                <pre id="code17"><code>let text = "Hello, World!";
+console.log(text.toUpperCase());</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>The Modern Mode, "use strict"</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code18')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: "use strict" enforces stricter parsing and error handling.
+                </p>
+                <pre id="code18"><code>"use strict";
+let x = 10;</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Objects</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code19')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Objects store key-value pairs.
+                </p>
+                <pre id="code19"><code>let person = { name: "Alice", age: 30 };
+console.log(person.name);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Functions</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code20')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Functions encapsulate reusable code.
+                </p>
+                <pre id="code20"><code>function greet(name) {
+  return "Hello, " + name;
+}
+console.log(greet("Bob"));</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Prototypes and Objects</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('code21')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Prototypes allow inheritance; objects can inherit properties.
+                </p>
+                <pre id="code21"><code>function Animal(name) {
+  this.name = name;
+}
+
+Animal.prototype.sayHello = function() {
+  return "Hello, " + this.name;
+};
+
+let dog = new Animal("Buddy");
+console.log(dog.sayHello());</code></pre>
+            </div>
+        </div>
+
+        <!-- BOM Cards -->
+
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>History Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeBOM1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Manipulates the browser's history stack.
+                </p>
+                <pre id="codeBOM1"><code>history.back(); // Go to previous page
+history.forward(); // Go to next page</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Document Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeBOM2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Represents the web page; used to manipulate DOM.
+                </p>
+                <pre id="codeBOM2"><code>document.getElementById('myElement').innerText = 'New Text';</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Navigator Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeBOM3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Provides information about the browser.
+                </p>
+                <pre id="codeBOM3"><code>console.log(navigator.userAgent);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Location Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeBOM4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Provides information about and controls the URL.
+                </p>
+                <pre id="codeBOM4"><code>console.log(location.href); // Current URL</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Screen Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeBOM5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Provides information about the screen's dimensions.
+                </p>
+                <pre id="codeBOM5"><code>console.log(screen.width);</code></pre>
+            </div>
+        </div>
+
+        <!-- DOM Cards -->
+        <h3> DOM AND BOM </h3> </BR>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Browser Environment, Specs</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: DOM represents the structure of a web page as a tree of nodes.
+                </p>
+                <pre id="codeDOM1"><code>// Example: No specific code required for concept explanation.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>DOM Tree</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Hierarchical structure of HTML elements.
+                </p>
+                <pre id="codeDOM2"><code>// Example: No specific code required for concept explanation.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>DOM Methods</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Methods to manipulate DOM elements.
+                </p>
+                <pre id="codeDOM3"><code>let element = document.createElement('div');
+document.body.appendChild(element);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Searching: getElement, querySelector</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Methods to find DOM elements.
+                </p>
+                <pre id="codeDOM4"><code>let elem1 = document.getElementById('myId');
+let elem2 = document.querySelector('.myClass');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Node Properties: Type, Tag, and Contents</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Inspect and manipulate node properties.
+                </p>
+                <pre id="codeDOM5"><code>let node = document.getElementById('myId');
+console.log(node.nodeType);
+console.log(node.tagName);
+console.log(node.textContent);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Attributes and Properties</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Modify element attributes and properties.
+                </p>
+                <pre id="codeDOM6"><code>let img = document.querySelector('img');
+img.src = 'newImage.jpg'; // Modify attribute</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Modifying the Document</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Add, remove, and change elements.
+                </p>
+                <pre id="codeDOM7"><code>let newElement = document.createElement('p');
+newElement.textContent = 'Hello, World!';
+document.body.appendChild(newElement);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Styles and Classes</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM8')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Manipulate CSS styles and classes.
+                </p>
+                <pre id="codeDOM8"><code>let element = document.getElementById('myElement');
+element.style.color = 'blue';
+element.classList.add('active');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Element Size and Scrolling</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM9')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Get and set element dimensions and scroll positions.
+                </p>
+                <pre id="codeDOM9"><code>let element = document.getElementById('myElement');
+console.log(element.clientHeight);
+element.scrollTop = 100;</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Window Sizes and Scrolling</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM10')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Get and set the window's dimensions and scroll position.
+                </p>
+                <pre id="codeDOM10"><code>console.log(window.innerWidth);
+window.scrollTo(0, 100);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Coordinates</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDOM11')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Get the position of elements relative to the viewport.
+                </p>
+                <pre id="codeDOM11"><code>let rect = document.getElementById('myElement').getBoundingClientRect();
+console.log(rect.top, rect.left);</code></pre>
+            </div>
+        </div>
+
+        <!-- Advanced Working with Functions Cards -->
+        <h3>Advanced Working with Functions Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Recursion and Stack</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Functions calling themselves; manage function call stack.
+                </p>
+                <pre id="codeFunc1"><code>function factorial(n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+console.log(factorial(5)); // 120</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Rest Parameters and Spread Operator</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Rest collects arguments; spread expands arrays.
+                </p>
+                <pre id="codeFunc2"><code>function sum(...numbers) {
+  return numbers.reduce((acc, num) => acc + num, 0);
+}
+console.log(sum(1, 2, 3)); // 6
+
+let arr = [1, 2, 3];
+console.log(...arr); // 1 2 3</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Closure</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Functions with access to outer scope variables.
+                </p>
+                <pre id="codeFunc3"><code>function createCounter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+let counter = createCounter();
+console.log(counter()); // 1
+console.log(counter()); // 2</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>The Old "var"</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: var is function-scoped, not block-scoped.
+                </p>
+                <pre id="codeFunc4"><code>function test() {
+  if (true) {
+    var x = 1;
+  }
+  console.log(x); // 1
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Global Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Object representing the global context (window in browsers).
+                </p>
+                <pre id="codeFunc5"><code>console.log(window.location.href);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>The "new Function" Syntax</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Create functions dynamically.
+                </p>
+                <pre id="codeFunc6"><code>let add = new Function('a', 'b', 'return a + b');
+console.log(add(1, 2)); // 3</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Scheduling: setTimeout and setInterval</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Schedule code execution.
+                </p>
+                <pre id="codeFunc7"><code>setTimeout(() => console.log('Delayed'), 1000); // Executes after 1 second
+setInterval(() => console.log('Repeated'), 1000); // Executes every 1 second</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Decorators and Forwarding, Call/Apply</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc8')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Modify function behavior; call and apply invoke functions with specified this context.
+                </p>
+                <pre id="codeFunc8"><code>function greet() {
+  return `Hello ${this.name}`;
+}
+let person = { name: 'Alice' };
+console.log(greet.call(person)); // Hello Alice</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Function Binding</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFunc9')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Bind functions to specific this context.
+                </p>
+                <pre id="codeFunc9"><code>function greet() {
+  return `Hello ${this.name}`;
+}
+let person = { name: 'Bob' };
+let boundGreet = greet.bind(person);
+console.log(boundGreet()); // Hello Bob</code></pre>
+            </div>
+        </div>
+
+        <!-- AJAX Development Cards -->
+        <h3>AJAX Development Cards </h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Creating the XMLHttpRequest Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Create an object to send HTTP requests.
+                </p>
+                <pre id="codeAJAX1"><code>let xhr = new XMLHttpRequest();</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Managing AJAX Requests</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle asynchronous HTTP requests.
+                </p>
+                <pre id="codeAJAX2"><code>let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.example.com/data', true);
+xhr.onload = () => {
+  if (xhr.status === 200) {
+    console.log(xhr.responseText);
+  }
+};
+xhr.send();</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JSON Introduction</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: JSON (JavaScript Object Notation) is a format for data interchange.
+                </p>
+                <pre id="codeAJAX3"><code>let jsonData = '{"name": "Alice", "age": 25}';
+let obj = JSON.parse(jsonData);
+console.log(obj.name); // Alice</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JSON Parse</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Convert JSON string to JavaScript object.
+                </p>
+                <pre id="codeAJAX4"><code>let jsonData = '{"name": "Bob"}';
+let obj = JSON.parse(jsonData);
+console.log(obj.name); // Bob</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JSON Stringify</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Convert JavaScript object to JSON string.
+                </p>
+                <pre id="codeAJAX5"><code>let obj = { name: 'Charlie' };
+let jsonData = JSON.stringify(obj);
+console.log(jsonData); // {"name":"Charlie"}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JSON Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Working with JSON objects in JavaScript.
+                </p>
+                <pre id="codeAJAX6"><code>let obj = { name: 'Diana', age: 30 };
+console.log(obj.name); // Diana</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>HTTP Methods – REST API</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use methods like GET, POST, PUT, DELETE for API requests.
+                </p>
+                <pre id="codeAJAX7"><code>fetch('https://api.example.com/data', {
+  method: 'POST',
+  body: JSON.stringify({ key: 'value' }),
+  headers: { 'Content-Type': 'application/json' }
+})
+.then(response => response.json())
+.then(data => console.log(data));</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>XMLHttpRequest Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX8')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: An old way to handle AJAX requests.
+                </p>
+                <pre id="codeAJAX8"><code>let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.example.com/data', true);
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    console.log(xhr.responseText);
+  }
+};
+xhr.send();</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>XHR Methods</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX9')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Methods for handling XMLHttpRequest.
+                </p>
+                <pre id="codeAJAX9"><code>xhr.open('GET', url);
+xhr.send();</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>XHR Properties</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAJAX10')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Properties like readyState, status, responseText.
+                </p>
+                <pre id="codeAJAX10"><code>console.log(xhr.readyState); // 4 when request is complete</code></pre>
+            </div>
+        </div>
+
+        <!-- ES6 (ECMAScript 2015) Cards -->
+        <h3>ES6 (ECMAScript 2015) Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Let, Var, and Const Keywords</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES61')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: let and const have block scope; var has function scope.
+                </p>
+                <pre id="codeES61"><code>let x = 1; // Block scoped
+const y = 2; // Constant value</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Arrow Functions, Default Function Arguments</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES62')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Shorter syntax for functions; default values.
+                </p>
+                <pre id="codeES62"><code>let add = (a, b = 2) => a + b;
+console.log(add(1)); // 3</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Template Strings</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES63')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Multi-line strings and embedded expressions.
+                </p>
+                <pre id="codeES63"><code>let name = "Alice";
+let greeting = \`Hello, \${name}!\`;
+console.log(greeting); // Hello, Alice!</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Object Destructuring</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES64')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Extract values from objects.
+                </p>
+                <pre id="codeES64"><code>let person = { name: 'Alice', age: 30 };
+let { name, age } = person;
+console.log(name); // Alice</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Array Manipulation Functions</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES65')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: New methods like Array.from(), Array.of(), Array.find().
+                </p>
+                <pre id="codeES65"><code>let nums = [1, 2, 3];
+console.log(nums.find(n => n > 1)); // 2</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Spread and Rest Operators</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES66')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: ... for expanding arrays and collecting arguments.
+                </p>
+                <pre id="codeES66"><code>let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+console.log(arr2); // [1, 2, 3, 4, 5]</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Promises, Async/Await</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES67')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle asynchronous operations.
+                </p>
+                <pre id="codeES67"><code>// Promise
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+// Async/Await
+async function fetchData() {
+  let response = await fetch('https://api.example.com/data');
+  let data = await response.json();
+  console.log(data);
+}
+fetchData();</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Symbols</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES68')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Unique identifiers for object properties.
+                </p>
+                <pre id="codeES68"><code>let sym = Symbol('description');
+let obj = { [sym]: 'value' };
+console.log(obj[sym]); // value</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Code Quality with ESLint</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES69')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Linting tool for maintaining code quality.
+                </p>
+                <pre id="codeES69"><code>Configure ESLint to follow coding standards.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>ES6 Tooling: Babel, npm, Webpack</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES610')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Transpile ES6 code, manage packages, bundle modules.
+                </p>
+                <pre id="codeES610"><code>Babel converts ES6 to ES5; Webpack bundles files.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Classes, Inheritance</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES611')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: ES6 class syntax for defining classes and inheritance.
+                </p>
+                <pre id="codeES611"><code>class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    return `Hello, ${this.name}`;
+  }
+}
+
+class Dog extends Animal {
+  bark() {
+    return 'Woof!';
+  }
+}
+
+let dog = new Dog('Rex');
+console.log(dog.speak()); // Hello, Rex</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Generators</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES612')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Functions that can be paused and resumed.
+                </p>
+                <pre id="codeES612"><code>function* count() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+let gen = count();
+console.log(gen.next().value); // 1</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Proxies</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES613')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Intercept operations on objects.
+                </p>
+                <pre id="codeES613"><code>let handler = {
+  get(target, prop) {
+    return prop in target ? target[prop] : 'Property not found';
+  }
+};
+let target = { name: 'Alice' };
+let proxy = new Proxy(target, handler);
+console.log(proxy.name); // Alice
+console.log(proxy.age); // Property not found</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Async/Await Flow Control</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES614')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Simplify asynchronous code with async/await.
+                </p>
+                <pre id="codeES614"><code>async function fetchData() {
+  try {
+    let response = await fetch('https://api.example.com/data');
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+fetchData();</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <br class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span>Map, Set Operators</span>
+            <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES615')">Copy Code</button>
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                Concept: Map for key-value pairs; Set for unique values.
+            </p>
+            <pre id="codeES615"><code>let map = new Map();
+map.set('key', 'value');
+console.log(map.get('key')); // value
+
+let set = new Set([1, 2, 3]);
+set.add(4);
+console.log(set.has(2)); // true</code></pre>
+        </div>
+
+        <!-- ES6 Modules Cards -->
+        <h3> ES6 Modules Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Modules, Introduction</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeModules1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Split code into separate files.
+                </p>
+                <pre id="codeModules1"><code>// file1.js
+export const greet = () => 'Hello';
+
+// file2.js
+import { greet } from './file1';
+console.log(greet()); // Hello</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Export and Import</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeModules2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Share functions and variables between files.
+                </p>
+                <pre id="codeModules2"><code>// math.js
+export function add(a, b) {
+  return a + b;
+}
+
+// app.js
+import { add } from './math';
+console.log(add(2, 3)); // 5</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Dynamic Imports</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeModules3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Load modules dynamically at runtime.
+                </p>
+                <pre id="codeModules3"><code>async function loadModule() {
+  let module = await import('./module.js');
+  module.someFunction();
+}
+loadModule();</code></pre>
+            </div>
+        </div>
+
+        <!-- TypeScript Cards -->
+        <h3>TypeScript Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Introduction to TypeScript</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: A statically typed superset of JavaScript.
+                </p>
+                <pre
+                    id="codeTS1"><code>TypeScript adds static types to JavaScript, enhancing development with type checking and tooling.</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Primitive Types & Type Inference</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Types like string, number, and inferred types.
+                </p>
+                <pre id="codeTS2"><code>let num: number = 10;
+let str = "Hello"; // inferred type string</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Object Type & Type Inference</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Define object shapes and let TypeScript infer types.
+                </p>
+                <pre
+                    id="codeTS3"><code>let person: { name: string, age: number } = { name: 'John', age: 25 };</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Function Type & Type Inference</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Define function signatures.
+                </p>
+                <pre id="codeTS4"><code>function add(a: number, b: number): number {
+  return a + b;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Enums, Tuples</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Enums for named constants; Tuples for fixed-size arrays.
+                </p>
+                <pre id="codeTS5"><code>enum Color { Red, Green, Blue }
+let c: Color = Color.Green;
+
+let tuple: [string, number] = ['Alice', 25];</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Nullable Types</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle variables that can be null or undefined.
+                </p>
+                <pre id="codeTS6"><code>let name: string | null = null;</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Union Types, Intersection Types</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Variables that can be one of several types; combining multiple types.
+                </p>
+                <pre id="codeTS7"><code>let value: string | number = "Hello";
+value = 42;
+
+type Person = { name: string };
+type Employee = { employeeId: number };
+type Worker = Person & Employee;</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Never and Void Types</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS8')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: never for functions that never return; void for functions with no return value.
+                </p>
+                <pre id="codeTS8"><code>function error(message: string): never {
+  throw new Error(message);
+}
+
+function log(message: string): void {
+  console.log(message);
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>OOPs in TypeScript: Classes, Class Properties, Static Properties</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS9')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use classes, inheritance, and static properties.
+                </p>
+                <pre id="codeTS9"><code>class Person {
+  name: string;
+  static species: string = "Homo sapiens";
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  greet() {
+    return `Hello, ${this.name}`;
+  }
+}
+
+let p = new Person("John");
+console.log(p.greet()); // Hello, John</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Constructors, Getters & Setters</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS10')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Define constructors and properties with accessors.
+                </p>
+                <pre id="codeTS10"><code>class Circle {
+  private _radius: number;
+
+  constructor(radius: number) {
+    this._radius = radius;
+  }
+
+  get radius() {
+    return this._radius;
+  }
+
+  set radius(value: number) {
+    if (value > 0) {
+      this._radius = value;
+    }
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Inheritance, Abstract Classes, Interfaces</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS11')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Extend classes, use abstract classes and interfaces for structure.
+                </p>
+                <pre id="codeTS11"><code>abstract class Animal {
+  abstract makeSound(): void;
+}
+
+class Dog extends Animal {
+  makeSound() {
+    console.log('Woof!');
+  }
+}
+
+interface Person {
+  name: string;
+  age: number;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Access Modifiers</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS12')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Control access to class members (public, private, protected).
+                </p>
+                <pre id="codeTS12"><code>class Car {
+  public make: string;
+  private model: string;
+
+  constructor(make: string, model: string) {
+    this.make = make;
+    this.model = model;
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Namespaces and Modules</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS13')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use namespaces and modules to organize code.
+                </p>
+                <pre id="codeTS13"><code>namespace MathUtils {
+  export function add(a: number, b: number): number {
+    return a + b;
+  }
+}
+
+import { add } from './mathUtils';
+console.log(add(2, 3)); // 5</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Type Assertion and Type Guards</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS14')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Assert types and guard types in conditional statements.
+                </p>
+                <pre id="codeTS14"><code>let someValue: any = "Hello";
+let strLength: number = (someValue as string).length;
+
+function isNumber(value: any): value is number {
+  return typeof value === 'number';
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Generics</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS15')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Create reusable components with type parameters.
+                </p>
+                <pre id="codeTS15"><code>function identity<T>(arg: T): T {
+  return arg;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Advanced TypeScript Types: Mapped Types, Conditional Types</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeTS16')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Create types based on other types; conditional type checks.
+                </p>
+                <pre id="codeTS16"><code>type ReadOnly<T> = {
+  readonly [K in keyof T]: T[K];
+};
+
+type T0 = ReadOnly<{ name: string }>; // { readonly name: string }</code></pre>
+            </div>
+        </div>
+        <!-- Error Handling Cards -->
+        <h3>Error Handling Cards </h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Error Handling Basics</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeErrorHandling1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use try, catch, finally for managing exceptions.
+                </p>
+                <pre id="codeErrorHandling1"><code>try {
+  throw new Error('Something went wrong');
+} catch (e) {
+  console.error(e.message);
+} finally {
+  console.log('Cleanup code');
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Error Types and Properties</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeErrorHandling2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Different types of errors and their properties.
+                </p>
+                <pre id="codeErrorHandling2"><code>try {
+  throw new TypeError('Type error');
+} catch (e) {
+  if (e instanceof TypeError) {
+    console.error('Caught a type error:', e.message);
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Custom Error Classes</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeErrorHandling3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Create user-defined error types.
+                </p>
+                <pre id="codeErrorHandling3"><code>class CustomError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'CustomError';
+  }
+}
+
+throw new CustomError('This is a custom error');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Error Handling in Async Code</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeErrorHandling4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle errors in asynchronous code with try/catch or .catch().
+                </p>
+                <pre id="codeErrorHandling4"><code>async function fetchData() {
+  try {
+    let response = await fetch('https://api.example.com/data');
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Fetch error:', error);
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Error Handling in Callbacks</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeErrorHandling5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle errors in callback functions.
+                </p>
+                <pre id="codeErrorHandling5"><code>function doSomething(callback) {
+  try {
+    // Some code that might throw
+    callback(null, 'Success');
+  } catch (error) {
+    callback(error);
+  }
+}
+
+doSomething((err, result) => {
+  if (err) {
+    console.error('Error:', err);
+  } else {
+    console.log('Result:', result);
+  }
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Asynchronous JavaScript Cards -->
+        <h3>Asynchronous JavaScript Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Callback Functions</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAsyncJS1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Functions passed as arguments to handle asynchronous results.
+                </p>
+                <pre id="codeAsyncJS1"><code>function fetchData(callback) {
+  setTimeout(() => {
+    callback('Data');
+  }, 1000);
+}
+
+fetchData(data => {
+  console.log(data); // Data
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Promises and Chaining</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAsyncJS2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle asynchronous operations with Promise.
+                </p>
+                <pre id="codeAsyncJS2"><code>let promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve('Data'), 1000);
+});
+
+promise
+  .then(result => console.log(result)) // Data
+  .catch(error => console.error(error));</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Async/Await</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAsyncJS3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Syntactic sugar for handling promises.
+                </p>
+                <pre id="codeAsyncJS3"><code>async function fetchData() {
+  try {
+    let response = await fetch('https://api.example.com/data');
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Handling Errors in Async Functions</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAsyncJS4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use try/catch in async functions for error handling.
+                </p>
+                <pre id="codeAsyncJS4"><code>async function fetchData() {
+  try {
+    let response = await fetch('https://api.example.com/data');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Race Conditions</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAsyncJS5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Handle situations where multiple async operations complete out of order.
+                </p>
+                <pre id="codeAsyncJS5"><code>Promise.race([
+  new Promise(resolve => setTimeout(() => resolve('First'), 1000)),
+  new Promise(resolve => setTimeout(() => resolve('Second'), 500))
+]).then(result => console.log(result)); // Second</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Parallel Execution</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeAsyncJS6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Execute multiple async operations simultaneously.
+                </p>
+                <pre id="codeAsyncJS6"><code>async function fetchData() {
+  let [response1, response2] = await Promise.all([
+    fetch('https://api.example.com/data1'),
+    fetch('https://api.example.com/data2')
+  ]);
+  let data1 = await response1.json();
+  let data2 = await response2.json();
+  console.log(data1, data2);
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Web APIs Cards -->
+        <h3>Web APIs Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>DOM Manipulation</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Modify HTML and CSS using JavaScript.
+                </p>
+                <pre
+                    id="codeWebAPI1"><code>document.getElementById('myElement').textContent = 'New Content';</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Event Handling</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Respond to user interactions and events.
+                </p>
+                <pre id="codeWebAPI2"><code>document.getElementById('myButton').addEventListener('click', () => {
+  alert('Button clicked');
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Local Storage, Session Storage</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Store data in the browser.
+                </p>
+                <pre id="codeWebAPI3"><code>localStorage.setItem('key', 'value');
+let value = localStorage.getItem('key');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Fetch API</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Make HTTP requests.
+                </p>
+                <pre id="codeWebAPI4"><code>fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data));</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>WebSockets</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Real-time communication with servers.
+                </p>
+                <pre id="codeWebAPI5"><code>let socket = new WebSocket('wss://example.com/socket');
+socket.onmessage = (event) => {
+  console.log(event.data);
+};</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Canvas API</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Draw graphics and animations.
+                </p>
+                <pre id="codeWebAPI6"><code>let canvas = document.getElementById('myCanvas');
+let ctx = canvas.getContext('2d');
+ctx.fillStyle = 'red';
+ctx.fillRect(10, 10, 100, 100);</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Geolocation API</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Get the user's location.
+                </p>
+                <pre id="codeWebAPI7"><code>navigator.geolocation.getCurrentPosition((position) => {
+  console.log(position.coords.latitude, position.coords.longitude);
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Web Storage API</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI8')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Local and session storage management.
+                </p>
+                <pre id="codeWebAPI8"><code>sessionStorage.setItem('key', 'value');
+let value = sessionStorage.getItem('key');</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>IndexedDB</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeWebAPI9')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Low-level API for client-side storage.
+                </p>
+                <pre id="codeWebAPI9"><code>let request = indexedDB.open('myDatabase', 1);
+request.onsuccess = (event) => {
+  let db = event.target.result;
+  let transaction = db.transaction('myObjectStore', 'readwrite');
+  let store = transaction.objectStore('myObjectStore');
+  store.put({ id: 1, name: 'Alice' });
+};</code></pre>
+            </div>
+        </div>
+
+        <!-- Event Handling Cards -->
+        <h3>Event Handling Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Event Listeners</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeEventHandling1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Attach handlers to DOM events.
+                </p>
+                <pre id="codeEventHandling1"><code>document.getElementById('myButton').addEventListener('click', () => {
+  alert('Button clicked');
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Event Object</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeEventHandling2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Object passed to event handlers with details about the event.
+                </p>
+                <pre id="codeEventHandling2"><code>document.getElementById('myButton').addEventListener('click', (event) => {
+  console.log(event.type); // click
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Event Bubbling and Capturing</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeEventHandling3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Phases of event propagation.
+                </p>
+                <pre id="codeEventHandling3"><code>document.getElementById('parent').addEventListener('click', () => {
+  console.log('Parent clicked');
+}, true); // Capture phase
+
+document.getElementById('child').addEventListener('click', () => {
+  console.log('Child clicked');
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Preventing Default Actions</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeEventHandling4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Stop default actions of events.
+                </p>
+                <pre id="codeEventHandling4"><code>document.getElementById('myForm').addEventListener('submit', (event) => {
+  event.preventDefault();
+  console.log('Form submission prevented');
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Event Delegation</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeEventHandling5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Use a single handler for multiple elements.
+                </p>
+                <pre id="codeEventHandling5"><code>document.getElementById('parent').addEventListener('click', (event) => {
+  if (event.target && event.target.matches('button')) {
+    console.log('Button clicked:', event.target);
+  }
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Frameworks and Libraries Cards -->
+        <h3> Frameworks and Libraries Cards</h3></br>
+        <!-- Card 1 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>React Basics</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks1')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Build UI components using React.
+                </p>
+                <pre id="codeFrameworks1"><code>function App() {
+  return &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>React State Management</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks2')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Manage component state using hooks or class-based state.
+                </p>
+                <pre id="codeFrameworks2"><code>function Counter() {
+  const [count, setCount] = React.useState(0);
+  return (
+    &lt;div&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={() => setCount(count + 1)&gt;Increment&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Vue.js Basics</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks3')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Build UI with Vue.js.
+                </p>
+                <pre id="codeFrameworks3"><code>new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Vue.js State Management</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks4')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Manage state with Vuex.
+                </p>
+                <pre id="codeFrameworks4"><code>const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment(state) {
+      state.count++;
+    }
+  }
+});</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Angular Basics</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks5')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Build apps with Angular framework.
+                </p>
+                <pre id="codeFrameworks5"><code>@Component({
+  selector: 'app-root',
+  template: '&lt;h1&gt;{{ title }}&lt;/h1&gt;',
+})
+export class AppComponent {
+  title = 'Hello Angular';
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Angular State Management</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks6')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Manage state using services and RxJS.
+                </p>
+                <pre id="codeFrameworks6"><code>@Injectable({
+  providedIn: 'root',
+})
+export class DataService {
+  private dataSource = new BehaviorSubject<number>(0);
+  data$ = this.dataSource.asObservable();
+
+  setData(value: number) {
+    this.dataSource.next(value);
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>jQuery Basics</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeFrameworks7')">Copy Code</button>
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    Concept: Simplify DOM manipulation and event handling with jQuery.
+                </p>
+                <pre id="codeFrameworks7"><code>$('#myButton').click(() => {
+  alert('Button clicked');
+});</code></pre>
+            </div>
+        </div>
+
+
+        <!-- Add more cards as needed -->
+
+    </main>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Clipboard JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
