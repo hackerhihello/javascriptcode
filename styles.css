@@ -114,6 +114,17 @@ body {
 }
 
 .btn-copy:hover {
-    background-color: #138496;
+    background-color: #139296;
     transform: scale(1.05);
+}
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 0 4px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.highlight:hover {
+    background-color: #ffeb3b;
 }
