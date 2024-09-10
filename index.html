@@ -17,6 +17,16 @@
     </header>
     <main class="container mt-4">
 
+        <!-- Search Bar -->
+        <div class="search-bar mb-4">
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search blog posts...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="searchPosts()">Search</button>
+                </div>
+            </div>
+        </div>
+        
         <!-- Card 1 -->
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
@@ -193,10 +203,19 @@ const age = 30;</code></pre>
 
         <!-- Card 12 (continued) -->
         <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>JavaScript Data Types</span>
+                <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeDataTypes')">Copy Code</button>
+            </div>
             <div class="card-body">
-                <pre id="code12"><code>let name = "John"; // string
-let age = 25;      // number
-let isStudent = true; // Boolean</code></pre>
+                <p class="card-text">
+                    JavaScript has several data types, including strings, numbers, booleans, objects, and undefined. Here are some examples:
+                </p>
+                <pre id="codeDataTypes"><code>
+        let name = "John"; // string
+        let age = 25;      // number
+        let isStudent = true; // Boolean
+                </code></pre>
             </div>
         </div>
 
@@ -353,7 +372,7 @@ console.log(dog.sayHello());</code></pre>
         </div>
 
         <!-- BOM Cards -->
-
+<h3>BOM Cards</h3></br>
         <!-- Card 1 -->
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
@@ -1188,7 +1207,7 @@ fetchData();</code></pre>
         </div>
 
         <!-- Card 15 -->
-        <br class="card mb-4">
+        <div class="card mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
             <span>Map, Set Operators</span>
             <button class="btn btn-info btn-sm" onclick="copyToClipboard('codeES615')">Copy Code</button>
@@ -1205,6 +1224,7 @@ let set = new Set([1, 2, 3]);
 set.add(4);
 console.log(set.has(2)); // true</code></pre>
         </div>
+    </div>
 
         <!-- ES6 Modules Cards -->
         <h3> ES6 Modules Cards</h3></br>
